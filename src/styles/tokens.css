@@ -1,0 +1,126 @@
+/**
+ * Design Tokens for Social Technologies (socialtechnologies.in)
+ * Design Template: Light Theme based on "An interconnected commerce engine"
+ * 
+ * Palette:
+ * - Background White: #FFFFFF
+ * - Background Soft Grey: #F5F7FA
+ * - Text Primary: #101828
+ * - Text Muted: #667085
+ * - Accent: #2563EB
+ * - Accent Hover: #1D4ED8
+ * - Accent Subtle: #EFF6FF
+ * - Border: #E4E7EC
+ * - Border Subtle: #F2F4F7
+ */
+
+:root {
+  /* Core Color Tokens */
+  --bg-white: #ffffff;
+  --bg-subtle: #f5f7fa;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fa;
+  --bg-card: #ffffff;
+
+  --text-primary: #101828;
+  --text-secondary: #667085;
+  --text-muted: #667085;
+
+  --border-default: #e4e7ec;
+  --border-subtle: #f2f4f7;
+  --border-hover: #d0d5dd;
+
+  /* Single Accent Color */
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-subtle: #eff6ff;
+  --accent-border: #bfdbfe;
+
+  /* Aliases mapped to clean light tokens for backwards compatibility */
+  --bg-dark: #ffffff;
+  --surface-dark: #f5f7fa;
+  --surface-dark-card: #ffffff;
+  --surface-dark-glass: #ffffff;
+  --border-dark-glass: #e4e7ec;
+  --border-dark-hover: #d0d5dd;
+  --paper: #f5f7fa;
+  --ink: #101828;
+  --muted: #667085;
+  --accent-mint: #2563eb;
+  --accent-mint-hover: #1d4ed8;
+  --accent-mint-subtle: #eff6ff;
+  --accent-blue: #2563eb;
+  --accent-blue-hover: #1d4ed8;
+  --accent-blue-subtle: #eff6ff;
+
+  /* Typography - Inter for all text, Sora aliased to Inter */
+  --font-inter: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sora: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Font Weights */
+  --font-weight-body: 400;
+  --font-weight-heading: 700;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+
+  /* Spacing Scale */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+
+  /* Radius Scale */
+  --radius-xs: 0.25rem; /* 4px */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+  --radius-2xl: 1.5rem; /* 24px */
+  --radius-3xl: 2rem; /* 32px */
+  --radius-full: 9999px;
+
+  /* Soft Shadows Scale (Clean, subtle, no glows) */
+  --shadow-xs: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(16, 24, 40, 0.08), 0 1px 2px -1px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 4px 8px -2px rgba(16, 24, 40, 0.06), 0 2px 4px -2px rgba(16, 24, 40, 0.04);
+  --shadow-lg: 0 12px 16px -4px rgba(16, 24, 40, 0.06), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 20px 48px rgba(0, 0, 0, 0.09);
+  --shadow-glass: var(--shadow-sm);
+  --shadow-glow-mint: none;
+  --shadow-glow-blue: none;
+
+  /* Nav dimensions */
+  --nav-height: 4.5rem;
+}
+
+/* Reduced Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
